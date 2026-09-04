@@ -1,0 +1,39 @@
+cat > .gitignore << 'EOF'
+# Virtual environment
+venv/
+env/
+ENV/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+
+# Databases and logs
+data/audit_trail.db
+data/retraining_log.jsonl
+paysim1.zip
+
+# Model backups and generated files
+models/history/
+models/cost_surface.png
+
+# IDE and OS
+.streamlit/
+.env
+.DS_Store
+*.swp
+*.swo
+
+# Temporary files
+probability_test.py
+
+# Large generated files
+data/paysim_train_features.pkl
+data/paysim_test_features.pkl
+archive.zip
+*.zip
+*.pkl
+EOF
