@@ -1,4 +1,3 @@
-cat > README.md << 'EOF'
 # AI Risk Manager — Fraud Detection System
 
 A production-grade fraud detector built for the Razorpay Buildathon (Track 02), featuring:
