@@ -48,4 +48,3 @@ Then open http://localhost:8501 in your browser.
 - Precision: 24.7% (at optimal threshold)
 - Missed fraud cost: $113M (on held-out test set)
 - False block cost: $75K (customer friction)
-EOF
