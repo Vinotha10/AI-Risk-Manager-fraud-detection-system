@@ -152,7 +152,7 @@ the feature engineering rather than training randomness.
 
 
 ----------------------------------------------------------------
-6. THRESHOLD OPTIMIZER — 3-TIER DECISION SYSTEM
+6. THRESHOLD OPTIMIZER — 2-TIER DECISION SYSTEM
 ----------------------------------------------------------------
 Design: Cost-based grid search over (approve_threshold,
 block_threshold) pairs, simulating decisions and computing total
