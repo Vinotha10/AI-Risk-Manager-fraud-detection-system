@@ -1,5 +1,5 @@
 {
-  "current_version": 1,
+  "current_version": 4,
   "versions": [
     {
       "version": 1,
@@ -12,6 +12,103 @@
       },
       "promoted": true,
       "backup_path": "models/history/model_v1_20260902_190843.pkl"
+    },
+    {
+      "version": null,
+      "timestamp": "2026-09-05T10:37:30.412169",
+      "feedback_rows_used": 9,
+      "scores": {
+        "precision": 0.08882534811818583,
+        "recall": 0.8973696571160169,
+        "f1": 0.16164992067689055
+      },
+      "promoted": false,
+      "backup_path": null
+    },
+    {
+      "version": 2,
+      "timestamp": "2026-09-05T10:56:13.840688",
+      "feedback_rows_used": 230,
+      "scores": {
+        "precision": 0.8128834355828221,
+        "recall": 0.9957726632221701,
+        "f1": 0.8950812750686088
+      },
+      "promoted": true,
+      "backup_path": "models/history/model_v2_20260905_105613.pkl"
+    },
+    {
+      "version": null,
+      "timestamp": "2026-09-21T09:00:59.981550",
+      "current_f1": 0.39359528673920274,
+      "candidate_f1": null,
+      "current_recall": 0.972757162987318,
+      "candidate_recall": null,
+      "feedback_rows": 33,
+      "feedback_quality": null,
+      "decision": "reject",
+      "confidence": null,
+      "agent_reasoning": null,
+      "agent_steps": 10,
+      "promoted": false
+    },
+    {
+      "version": null,
+      "timestamp": "2026-09-21T09:18:34.561646",
+      "current_f1": 0.39359528673920274,
+      "candidate_f1": null,
+      "current_recall": 0.972757162987318,
+      "candidate_recall": null,
+      "feedback_rows": 33,
+      "feedback_quality": null,
+      "decision": "reject",
+      "confidence": null,
+      "agent_reasoning": null,
+      "agent_steps": 10,
+      "promoted": false
+    },
+    {
+      "version": null,
+      "timestamp": "2026-09-21T09:35:15.589123",
+      "current_f1": 0.39359528673920274,
+      "candidate_f1": 0.5736733287388008,
+      "current_recall": 0.972757162987318,
+      "candidate_recall": 0.9774542038515736,
+      "feedback_rows": 33,
+      "feedback_quality": null,
+      "decision": "reject",
+      "confidence": null,
+      "agent_reasoning": null,
+      "agent_steps": 10,
+      "promoted": false
+    },
+    {
+      "version": 3,
+      "timestamp": "2026-09-21T10:34:43.497315",
+      "current_f1": 0.39359528673920274,
+      "candidate_f1": 0.5736733287388008,
+      "current_recall": 0.972757162987318,
+      "candidate_recall": 0.9774542038515736,
+      "feedback_rows": 33,
+      "feedback_quality": "medium",
+      "decision": "promote",
+      "confidence": "high",
+      "agent_reasoning": " DECISION: PROMOTE\nCONFIDENCE: high\nREASONING: The candidate model shows a significant improvement in F1 score compared to the current model (delta: +0.180), exceeding the promotion rule of F1 >= 0.384 (Current F1 - 0.01). Additionally, the feedback quality is medium, suggesting that the data used for training the candidate model is of acceptable quality.",
+      "promoted": true
+    },
+    {
+      "version": 4,
+      "timestamp": "2026-09-21T11:36:48.960196",
+      "current_f1": 0.5736733287388008,
+      "candidate_f1": 0.8950812750686088,
+      "current_recall": 0.9774542038515736,
+      "candidate_recall": 0.9957726632221701,
+      "feedback_rows": 230,
+      "feedback_quality": "high",
+      "decision": "promote",
+      "confidence": "high",
+      "agent_reasoning": " DECISION: PROMOTE\nCONFIDENCE: high\nREASONING: The candidate model significantly outperforms the current model in F1 score (0.895 vs 0.574), and the feedback quality is high. The improvement of 0.321 in F1 score exceeds the tolerance for noise (0.01), which suggests that the candidate model is likely to be more effective in detecting fraud.",
+      "promoted": true
     }
   ]
 }
